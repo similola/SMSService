@@ -10,7 +10,7 @@
 
 ### Prerequisites: ###
 * Please make sure Maven is installed locally by running this in command line: $ mvn -v
-* Set up a Twilio trial account and populate TextMessageConstants.java file with Account Sid, Auth Token and Sender number(service won't work without this!)
+* Set up a Twilio trial account and populate TextMessageConstants.java file with Account Sid, Auth Token and Sender number(service won't work without this! Also please don't make your token public. If you ever do  :) you can create a secondary token in Twilio and then promote it to primary. This way your Twilio account isn't compromised)
 
 ### To Run: ###
 * Run tests and server in root directory, run this in command line:
