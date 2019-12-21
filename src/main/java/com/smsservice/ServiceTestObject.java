@@ -5,6 +5,7 @@ public class ServiceTestObject {
 
     String serviceName;
     String serviceStatus;
+
     public String getServiceName() {
         return serviceName;
     }
