@@ -15,6 +15,7 @@
 ### To Run: ###
 * Run tests and server in root directory, run this in command line:
     $ mvn clean package jetty:run
+This will basically create a target folder and downloads a bunch of dependencies and a war file. Read the pom.xml to learn about what's going on.
 
 Examples of HTTP Calls (Try this using a Postman client)
 http://localhost:8080/register/?username=bob&tel=07654321234
