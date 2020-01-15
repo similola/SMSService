@@ -11,16 +11,19 @@ A java webservice that confirms user registrations through text messages. Uses J
 ### Prerequisites: 
 Please make sure Maven is installed locally by running this in command line:
 * $ mvn -v
+
 Set up a Twilio trial account and populate TextMessageConstants.java file with Account Sid, Auth Token and Sender number(service won't work without this! Also please don't make your token public. If you ever do, you can create a secondary token in Twilio and then promote it to primary. This way your Twilio account isn't compromised.
 
 ### To Run:
 Run tests and server in root directory, run this in command line:
 * $ mvn clean package jetty:run
+
 This will basically create a target folder and downloads a bunch of dependencies and a war file. Read the pom.xml to learn about what's going on.
 
 Examples of HTTP Calls (Try this using a Postman client for this GET request with query parameters)
 
 * http://localhost:8080/register/?username=bob&tel=07654321234
+
 This call sends a text message using the twilio wrapper
 
 ### Architecture
